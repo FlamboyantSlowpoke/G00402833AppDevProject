@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>snake_guide</ion-title>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Snakes</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+    <ion-button (click)="GOHome()">homeButton</ion-button>
+
+    <p>
+      So your choice of pet is a snake?? someone must've been a fan of Kaa, while your new found friend
+      isnt going to be hypnotising anyone with its eyes, they will certainly enchant you with their charm.
+      Snakes make a great beginner reptile for the fact they teach the basics of all reptile needs, while being a clean,
+      low maintenance pet, they feed rarely and are very easy to handle.<br /><br />
+
+      the most popular beginner snakes for most are between corn snakes and western hognoses, due to their friendly temperment, 
+      small max size, and ease of husbandry, they are both burrowing snakes so you wont need to worry about having a tall enclosure 
+      and instead will value more horizontal space for the enclosure, depending on climate, you can sometimes get away with not having 
+      heat bulb, and instead can opt for a heat mat, which will save on those ever increasing power bills.<br />
+      Snakes on average live anywhere from 5 to 14 years, so getting one is a big investment of time, but with the right handeling and care,
+      one can develop a deep and personal bond.<br /><br />
+      
+      DIET:
+      Most snakes are pureley carnivorous, with smaller species feeding off chicks and pinkies, which should happen about once a week,
+      and larger species may need to be fed butcher qaulity meet, or in extreme cases, other snakes.<br /><br />
+
+      Below will send you to a video reference for caring and details of snakes
+    </p>
+    <ion-button (click)="GOSnakeVideo()">Snake Discovery on YouTube</ion-button>
+  </ion-list>
+</ion-content>

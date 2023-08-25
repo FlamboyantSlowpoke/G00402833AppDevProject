@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>reptile_survey</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">reptile_survey</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- formats survey with radio buttons and a text box to accept user input -->
+  <h3>Here is a short survey for you to fill out!</h3> 
+<ion-list>
+  <p>What kind of reptile do you have or want?</p>
+  <ion-radio-group [(ngModel)]="reptileChoice">
+
+    <ion-item>
+      <ion-label>a snake</ion-label>
+      <ion-radio value="1"></ion-radio><br />
+    </ion-item>
+
+    <ion-item>
+      <ion-label>a lizard</ion-label>
+      <ion-radio value="2"></ion-radio><br />
+    </ion-item>
+
+    <ion-item>
+      <ion-label>a monitor</ion-label>
+      <ion-radio value="3"></ion-radio><br />
+    </ion-item>
+
+  </ion-radio-group>
+</ion-list>
+
+ <!-- displays inner text in text box and returns typed as a variable -->
+<ion-list>
+  <p>what is your current or future pet's name?</p>
+ <ion-input color="red" [(ngModel)]="petName">input name here: </ion-input> 
+  
+</ion-list>
+
+<ion-list>
+  <p>Is this your first reptile??</p>
+  <ion-radio-group [(ngModel)]="firstPet">
+
+    <ion-item>
+      <ion-label>YES</ion-label>
+      <ion-radio value="true"></ion-radio><br />
+    </ion-item>
+
+    <ion-item>
+      <ion-label>NO</ion-label>
+      <ion-radio value="false"></ion-radio><br />
+    </ion-item>
+  </ion-radio-group>
+ 
+</ion-list>
+
+<ion-button (click)="runResults()">Submit survey and find out about your pet</ion-button>  <!--- once clicked, puts variables in an switch statement, and brings user to a corresponding webpage -->
+</ion-content>
